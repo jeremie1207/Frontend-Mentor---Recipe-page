@@ -107,6 +107,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-block-end: .5em;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .container {
     inline-size: 90%;
     max-inline-size: 1440px ;
@@ -125,4 +129,11 @@ h1, h2, h3, h4, h5, h6 {
 .recipe-title {
     font-family: var(--young-serif-700);
     line-height: 1;
+}
+
+.preparation-time {
+  margin-block: 2em;
+  background-color: var(--Stone-150);
+  padding: 1.5em;
+  font-size: .9em;
 }

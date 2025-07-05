@@ -123,6 +123,9 @@ h1, h2, h3, h4, h5, h6 {
         inline-size: 90%;
         max-inline-size: 1440px;
         margin-inline: auto;
+        border-start-start-radius: 15px;
+        border-start-end-radius: 15px;
+        margin-block-start: 3em;
     }
 }
 
@@ -156,6 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .instructions-list-item::marker {
   color: var(--Brown-800);
+  font-weight: bold;
 }
 
 .visually-hidden {
@@ -175,15 +179,29 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
 }
 
-.table {
-  display: 100%;
-  border-collapse: collapse;
+.table { 
+    width: 100%; 
+    border-collapse: collapse; 
 }
 
 .nutrition-table-data {
-  padding-bottom: 0.75em;
-  border-bottom: 1px solid #eee;
-  width: 100%;
+    padding-bottom: 0.75em;
+    padding-top: 0.75em; 
+    border-bottom: 1px solid #eee;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.table td { 
+    inline-size: 50%; 
+}
+
+.table td.value {
+    text-align: start; 
+}
+
+.table tr:last-child .nutrition-table-data {
+    border-bottom: none;
 }
 
 

@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 * > *:not(:last-child) {
-  margin-block-end: .5em;
+  margin-block-end: 1em;
 }
 
 .bold {
@@ -131,9 +131,59 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
 
+.preparation-time-title, .preparation-time-list-item {
+  font-size: 0.9em;
+}
+
+.preparation-time-title {
+  color: var(--Rose-800);
+}
+
 .preparation-time {
   margin-block: 2em;
-  background-color: var(--Stone-150);
+  background-color: var(--Rose-50);
   padding: 1.5em;
-  font-size: .9em;
 }
+
+.title {
+  font-family: var(--young-serif-600);
+  color: var(--Brown-800);
+}
+
+.instructions-list, .ingredients-list, .preparation-time-list {
+  padding-left: 1em;
+}
+
+.instructions-list-item::marker {
+  color: var(--Brown-800);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.value {
+  color: var(--Brown-800);
+  font-weight: 800;
+}
+
+.table {
+  display: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-table-data {
+  padding-bottom: 0.75em;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+
